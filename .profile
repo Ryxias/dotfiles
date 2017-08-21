@@ -6,6 +6,8 @@
 alias ll='ls -laG'
 
 # Customize bash prompt to include git branch
+#   Note: bash-completion does not come preinstalled on macs, 
+#         so you may need to install these manually using brew.
 . /usr/local/etc/bash_completion.d/git-completion.bash
 . /usr/local/etc/bash_completion.d/git-prompt.sh
 

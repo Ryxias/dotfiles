@@ -1,6 +1,8 @@
 #
 # GIT CONFIG FILE
 # 
+#   Usually stored at ~/.gitconfig
+#
 
 [push]
 	default = current
@@ -22,6 +24,6 @@ glmeb = glme ..origin/master
 
 [user]
 	name = Derek Wang
-	email = derek.wang@airbnb.com
+	email = derek@thirdimpact.co
 [color]
 	ui = auto
