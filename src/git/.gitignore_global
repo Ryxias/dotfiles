@@ -3,6 +3,10 @@
 #   Remember: By default this isn't included.  You need to hook it into git with:
 #
 #     `git config --global core.excludesfile ~/.gitignore_global`
-# 
+#
 
+# OSX Garbage
 .DS_Store
+
+# JetBrains IDEs
+.idea

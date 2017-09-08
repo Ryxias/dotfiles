@@ -1,29 +1,41 @@
 #
 # GIT CONFIG FILE
-# 
+#
 #   Usually stored at ~/.gitconfig
 #
 
 [push]
 	default = current
+
 [rerere]
 	enabled = true
+
 [core]
 	precomposeunicode = true
-	excludesfile = /Users/derek_wang/.gitignore_global
+	excludesfile = ~/.gitignore_global
+
 [alias]
-gl = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
-glme = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --branches=master,draft-*,derekwang*
-b = branch -vv
-ff = pull --ff-only
-s = status
-d = diff
-co = checkout
-glmea = glme origin/master..
-glmeb = glme ..origin/master
+    gl  = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    b   = branch -vv
+    ff  = pull --ff-only
+    s   = status
+    d   = diff
+    co  = checkout
+    rpo = remote prune origin
 
 [user]
 	name = Derek Wang
 	email = derek@thirdimpact.co
+
+[github]
+    user = Ryxias
+
 [color]
 	ui = auto
+
+[apply]
+    whitespace = strip
+
+
+[push]
+    default = upstream
